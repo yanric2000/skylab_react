@@ -1,4 +1,5 @@
 import React, { Component, useState } from 'react';
+import { Link } from 'react-router-dom';
 import Api from '../../services/api';
 import { ProductList, ProductItem, ButtonsContainer, Button } from './styles';
 
@@ -63,9 +64,7 @@ class Main extends Component {
                             <p>
                                 {product.description}
                             </p>
-                            <a>
-                                Acessar
-                            </a>
+                            <Link to={`/products/${product._id}`}> Acessar </Link>
                         </ProductItem>
                     ))}
                 </ProductList>
