@@ -39,3 +39,37 @@ export const ProductItem = styled.li`
         }
     }
 `;
+
+export const ButtonsContainer = styled.div`
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 660px;
+`;
+
+export const Button = styled.button`
+    align-items: center;
+    background-color: #DA552F;
+    border: 0;
+    border-radius: 5px;
+    color: #FFF;
+    cursor: pointer;
+    display: flex;
+    font-size: 16px;
+    font-weight: bold;
+    justify-content: center;
+    padding: 16px;
+    transition: background-color 0.2s, color 0.2s;
+    width: 130px;
+    &:hover{
+        background-color: rgba(218, 85, 47, 0.8);
+        color: rgba(255, 255, 255, 0.8);
+    }
+    &[disabled]{
+        background-color: #DA552F !important;
+        cursor: default !important;
+        opacity: 0.5 !important;
+    }
+`;
